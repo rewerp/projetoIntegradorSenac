@@ -69,4 +69,4 @@ Após realizar todas as configurações do ambiente do projeto, será preciso ex
 Se tudo der certo, deve ser apresentado a tela inicial da aplicação.
 
 <img src="https://raw.githubusercontent.com/rewerp/projetoIntegradorSenac/main/exemplos/app-exemplo-01.png" height="400" />
-<img src="https://raw.githubusercontent.com/rewerp/projetoIntegradorSenac/main/exemplos/app-exemplo-02.png" height="400" />
+<img src="https://raw.githubusercontent.com/rewerp/projetoIntegradorSenac/main/exemplos/app-exemplo-02.png" height="300" />
