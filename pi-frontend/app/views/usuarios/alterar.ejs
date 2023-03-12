@@ -1,0 +1,18 @@
+<%- include('../shared/header') %>
+
+<div class="container">
+
+   <h1>Usuario</h1> 
+   <input type="button" onclick="window.location = '/usuarios';" value="Voltar">
+   <form action="/usuarios/<%= usuario.id %>/atualizar" method="post">
+    <fieldset>
+      <legend>Alteração do Usuario: <%= usuario.nome %></legend>
+      <div><%= usuario.erro %></div>
+      <%- include('partials/form', {usuario: usuario})  %>
+      <input type="submit" value="Atualizar">
+    </fieldset>
+  </form>      
+    
+</div>
+
+<%- include('../shared/footer') %>

@@ -1,0 +1,18 @@
+<%- include('../shared/header') %>
+
+<div class="container">
+
+   <h1>Tutor</h1> 
+   <input type="button" onclick="window.location = '/tutores';" value="Voltar">
+   <form action="/tutores/<%= tutor.id %>/atualizar" method="post">
+    <fieldset>
+      <legend>Alteração do Tutor: <%= tutor.nome %></legend>
+      <div><%= tutor.erro %></div>
+      <%- include('partials/form', {tutor: tutor})  %>
+      <input type="submit" value="Atualizar">
+    </fieldset>
+  </form>      
+    
+</div>
+
+<%- include('../shared/footer') %>

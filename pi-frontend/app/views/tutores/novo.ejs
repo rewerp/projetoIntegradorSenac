@@ -1,0 +1,18 @@
+<%- include('../shared/header') %>
+
+<div class="container">
+
+   <h1>Tutores</h1> 
+   <input type="button" onclick="window.location = '/tutores';" value="Voltar">
+   <form action="/tutores/cadastrar" method="post">
+    <fieldset>
+      <legend>Cadastro:</legend>
+      <div><%= erro %></div>
+      <%- include('partials/form') %>
+      <input type="submit" value="Salvar">
+    </fieldset>
+  </form>      
+    
+</div>
+
+<%- include('../shared/footer') %>

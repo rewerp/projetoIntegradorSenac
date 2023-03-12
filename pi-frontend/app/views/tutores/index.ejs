@@ -1,0 +1,29 @@
+<%- include('../shared/header_tutor') %>
+
+<section id="home">
+    <div class="wrapper">
+      <div class="col-a">        
+        <header>
+          <h4>BEM VINDOS A SENSEIDEV 👋</h4>
+          <h1>Tutores disponiveis:</h1>
+        </header>  
+        <div class="content-tutor">
+            <% for(var i = 0; i < tutores.length; i++){ 
+                var tutor = tutores[i];           
+             %>
+            <div class="card-tutor">
+                <div>
+                    <i class="bi bi-person-circle" style="font-size: 30px;"></i> 
+                </div>
+                <div>
+                    <p><%= tutor.nome %></p>
+                </div>       
+            </div>
+             <% } %> 
+        </div>
+      </div> 
+         
+    </div>
+</section>
+
+<%- include('../shared/footer') %>

@@ -1,0 +1,54 @@
+/*=== FOOTER =================================*/
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #3f3e77;
+  width: 100%;
+  height: 296px;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+  bottom: 0;
+  left: 0;
+}
+
+footer h2{
+  font-size: 42px;
+}
+
+/* 
+footer .logo {
+  display: inline-block;
+  margin-bottom: 2.4rem;
+}
+
+footer .logo svg {
+  width: 23.6rem;
+  height: 3.1rem;
+}
+
+footer .logo path {
+  fill: white;
+}
+
+footer p {
+  line-height: 2;
+  margin-bottom: 3.2rem;
+}
+
+footer .social-links {
+  justify-content: flex-start;
+} */
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.icons a{
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: -20px;
+}

@@ -1,0 +1,31 @@
+CREATE DATABASE pi_backend;
+
+use pi_backend;
+
+CREATE TABLE Usuarios (
+    id int not null auto_increment,
+    nome varchar(255),
+    login varchar(255),
+    senha varchar(255),
+    email varchar(255),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Tutores (
+    id int not null auto_increment,
+    nome varchar(255),
+    login varchar(255),
+    senha varchar(255),
+    email varchar(255),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Token (
+    id int not null auto_increment,
+    token varchar(255),
+    PRIMARY KEY (id)
+);
+
+INSERT INTO Usuarios (nome, login, senha, email) VALUES ( 'teste', 'teste', '123', 'teste@teste');
+
+INSERT INTO Tutores (nome, login, senha, email) VALUES ( 'Alex', 'alex', '123', 'alex@teste');

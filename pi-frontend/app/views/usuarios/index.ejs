@@ -1,0 +1,29 @@
+<%- include('../shared/header_usuario') %>
+
+<section id="home">
+    <div class="wrapper">
+      <div class="col-a">        
+        <header>
+          <h4>BEM VINDOS A SENSEIDEV 👋</h4>
+          <h1>Alunos precisando de suporte:</h1>
+        </header>  
+        <div class="content-usuario">
+            <% for(var i = 0; i < usuarios.length; i++){ 
+                var usuario = usuarios[i];           
+             %>
+            <div class="card-usuario">
+                <div>
+                    <i class="bi bi-person-circle" style="font-size: 30px;"></i> 
+                </div>
+                <div>
+                    <p><%= usuario.nome %></p>
+                </div>       
+            </div>
+             <% } %> 
+        </div>
+      </div> 
+         
+    </div>
+</section>
+
+<%- include('../shared/footer') %>
