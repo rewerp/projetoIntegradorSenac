@@ -11,7 +11,15 @@
 
 ## Sobre o projeto
 
-O projeto nasceu da necessidade de auxilia na solução de um problema. Em construção...
+O projeto **Sistema de tutoria**, nasceu da iniciativa de ajudar alunos, que estão ingressando no mercado de tecnologia, ou até mesmo pessoas que já atuam, a encontrar tutores de forma prática e objetiva.
+
+O aluno pode se cadastrar na plataforma, para buscar tutores que tenham disponibilidade, para acompanhamento nos estudos de uma ou mais tecnologias.
+
+Os tutores que tiverem interesse em participar do projeto, também podem se cadastrar, e fornecer auxilio aos alunos.
+
+Nosso objetivo é centralizar os cadastros em uma plataforma prática, de fácil acesso, para possibilitar essa comunicação e que todos sejam beneficiados com essa parceria.
+
+O projeto é composto por uma API desenvolvida em Node.js e uma aplicação web, e para armazenar os dados, é utilizado o banco de dados MySQL.
 
 ## Técnologias utilizadas
 
@@ -59,3 +67,6 @@ Após realizar todas as configurações do ambiente do projeto, será preciso ex
 1. Após executar os servidores, abre o navegador de internet, e acesso o servidor da aplicação web, pelo endereço _**"localhost:3001"**_.
 
 Se tudo der certo, deve ser apresentado a tela inicial da aplicação.
+
+<img src="https://raw.githubusercontent.com/rewerp/projetoIntegradorSenac/main/exemplos/app-exemplo-01.png" height="400" />
+<img src="https://raw.githubusercontent.com/rewerp/projetoIntegradorSenac/main/exemplos/app-exemplo-01.png" height="400" />
