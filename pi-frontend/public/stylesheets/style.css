@@ -968,7 +968,7 @@ footer .social-links {
 .content-tutor{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
 }
 
 .card-usuario {
@@ -978,8 +978,114 @@ footer .social-links {
   justify-content: center;
 }
 
+.card-usuario i{
+  font-size: 130px;
+  color: #3F3E77;
+}
+
+.card-usuario p{
+  text-align: center;  
+}
+
 .content-usuario{
+  width: 1120px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
+  background-color: white;
+}
+
+#area-tutor{
+  height: 678px;
+  padding: 63px 0; 
+  margin: 0 30px;
+}
+
+#area-tutor .cards {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+}
+
+.card-especialidade{
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #3F3E77;
+  margin: 20px 0;
+  font-size: 30px;
+  border-radius: 10px;
+}
+
+.card-tutor-especialidade{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 300px;
+  height: 555px;
+  padding: 2.4rem;
+  text-align: left;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+
+.card-tutor-especialidade h3{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  font-size: 32px;
+}
+
+.card-tutor-especialidade h4{
+  display: flex;
+  justify-content: start;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.card-tutor-especialidade p{
+  
+}
+
+.card-icon{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: 150px;
+}
+
+.card-icon i{
+  display: flex;
+  justify-content: center;
+  color: #3f3e77;
+}
+
+
+.card-tutor-contato{
+  width: 600px;
+  align-self: center;
+}
+
+.card-tutor-contato h3{
+  font-size: 32px;
+}
+
+.card-tutor-button{
+  margin-top: 24px;
+  background: #7890E5;
+  border: none;
+  border-radius: 2rem;
+  padding: 1.6rem 3.2rem;
+  width: fit-content;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background 200ms;
 }

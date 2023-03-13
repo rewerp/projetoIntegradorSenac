@@ -7,23 +7,60 @@
           <h4>BEM VINDOS A SENSEIDEV 👋</h4>
           <h1>Tutores disponiveis:</h1>
         </header>  
-        <div class="content-tutor">
+        <div class="content-usuario">
             <% for(var i = 0; i < tutores.length; i++){ 
                 var tutor = tutores[i];           
-             %>
-            <div class="card-tutor">
-                <div>
-                    <i class="bi bi-person-circle" style="font-size: 30px;"></i> 
-                </div>
-                <div>
-                    <p><%= tutor.nome %></p>
-                </div>       
-            </div>
-             <% } %> 
+             %>            
+            <div class="card-usuario">            
+              <i class="bi bi-person-circle"></i>            
+              <p>
+                <%= tutor.nome %>
+              </p>            
+            </div>            
+            <% } %> 
         </div>
       </div> 
          
     </div>
+</section>
+
+<section id="area-tutor">
+  <div class="">  
+    <div class="content">
+      <div class="cards">
+        <div class="card-tutor-especialidade"> 
+          <div class="card-icon">
+            <i class="bi bi-person-circle" style=""></i> 
+          </div>
+          <h3>Lucia</h3>
+          <div>
+            <h4>Sobre:</h4>
+            <p>
+              A SenseiDev conecta a pessoa desenvolvedora que precisa deste auxílio com quem já tem experiência na área e está disponível para contribuir com a comunidade.
+            </p>
+          </div>          
+        </div>
+
+        <div class="card-tutor-especialidade"> 
+          <h4>Especialidades:</h4>
+          <div class="card-especialidade">
+            Back-End            
+          </div>
+          <div class="card-especialidade">
+            UX & Design            
+          </div>          
+        </div> 
+        
+        <div class="card-tutor-contato">
+          <h3 class="">Entre em contato com o Tutor</h3>
+          <button class="card-tutor-button">
+            CONTACTAR
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </section>
 
 <%- include('../shared/footer') %>

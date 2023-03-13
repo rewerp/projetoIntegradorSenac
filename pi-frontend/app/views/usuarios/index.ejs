@@ -11,19 +11,56 @@
             <% for(var i = 0; i < usuarios.length; i++){ 
                 var usuario = usuarios[i];           
              %>
-            <div class="card-usuario">
-                <div>
-                    <i class="bi bi-person-circle" style="font-size: 30px;"></i> 
-                </div>
-                <div>
-                    <p><%= usuario.nome %></p>
-                </div>       
+            <div class="card-usuario">            
+              <i class="bi bi-person-circle"></i>            
+              <p>
+                <%= usuario.nome %>
+              </p>            
             </div>
              <% } %> 
         </div>
       </div> 
          
     </div>
+</section>
+
+<section id="area-tutor">
+  <div class="">  
+    <div class="content">
+      <div class="cards">
+        <div class="card-tutor-especialidade"> 
+          <div class="card-icon">
+            <i class="bi bi-person-circle"></i> 
+          </div>
+          <h3>Juliana</h3>
+          <div>
+            <h4>Sobre:</h4>
+            <p>
+              A SenseiDev conecta a pessoa desenvolvedora que precisa deste auxílio com quem já tem experiência na área e está disponível para contribuir com a comunidade.
+            </p>
+          </div>          
+        </div>
+
+        <div class="card-tutor-especialidade"> 
+          <h4>Precisa de ajuda em:</h4>
+          <div class="card-especialidade">
+            Mobile           
+          </div>
+          <div class="card-especialidade">
+            UX & Design            
+          </div>          
+        </div> 
+        
+        <div class="card-tutor-contato">
+          <h3 class="">Entre em contato com o Aluno</h3>
+          <button class="card-tutor-button">
+            AJUDAR
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </section>
 
 <%- include('../shared/footer') %>
