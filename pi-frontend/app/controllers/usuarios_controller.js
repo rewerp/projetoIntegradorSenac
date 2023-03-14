@@ -1,11 +1,11 @@
-var Usuario = require("../models/usuario");
+var Tutor = require("../models/tutor");
 
 var UsuariosController = {
   index: function (req, res, next) {
-    Usuario.todos(function (usuarios) {
-      res.render("./usuarios/index", {
+    Tutor.todos(function (tutores) {
+      res.render("./tutores/index", {
         title: "trazer os dados da API",
-        usuarios: usuarios,
+        tutores: tutores,
       });
     });
   },
@@ -15,58 +15,58 @@ var UsuariosController = {
     if (erro === undefined) {
       erro = "";
     }
-    res.render("usuarios/novo", { erro: erro });
+    res.render("tutores/novo", { erro: erro });
   },
 
   cadastrar: function (req, res, next) {
-    var usuario = new Usuario();
-    usuario.nome = req.body.nome;
-    usuario.login = req.body.login;
-    usuario.senha = req.body.senha;
-    usuario.email = req.body.email;
-    usuario.salvar(function (retorno) {
+    var tutor = new Tutor();
+    tutor.nome = req.body.nome;
+    tutor.login = req.body.login;
+    tutor.senha = req.body.senha;
+    tutor.email = req.body.email;
+    tutor.salvar(function (retorno) {
       if (retorno.erro) {
-        res.redirect("/usuarios/novo?erro=" + retorno.mensagem);
+        res.redirect("/tutores/novo?erro=" + retorno.mensagem);
       } else {
-        res.redirect("/usuarios");
+        res.redirect("/tutores");
       }
     });
   },
 
   editar: function (req, res, next) {
-    new Usuario({ id: req.params.id }).buscar(function (usuario) {
-      if (usuario.erro !== undefined) {
-        res.redirect("/usuarios/alterar?erro=" + usuario.mensagem);
+    new Tutor({ id: req.params.id }).buscar(function (tutor) {
+      if (tutor.erro !== undefined) {
+        res.redirect("/tutores/alterar?erro=" + tutor.mensagem);
       } else {
-        res.render("usuarios/alterar", { usuario: usuario });
+        res.render("tutores/alterar", { tutor: tutor });
       }
     });
   },
 
   atualizar: function (req, res, next) {
-    var usuario = new Usuario();
-    usuario.id = req.params.id;
-    usuario.nome = req.body.nome;
-    usuario.login = req.body.login;
-    usuario.senha = req.body.senha;
-    usuario.email = req.body.email;
-    usuario.salvar(function (retorno) {
+    var tutor = new Tutor();
+    tutor.id = req.params.id;
+    tutor.nome = req.body.nome;
+    tutor.login = req.body.login;
+    tutor.senha = req.body.senha;
+    tutor.email = req.body.email;
+    tutor.salvar(function (retorno) {
       if (retorno.erro) {
-        res.redirect("/usuarios/novo?erro=" + retorno.mensagem);
+        res.redirect("/tutores/novo?erro=" + retorno.mensagem);
       } else {
-        res.redirect("/usuarios");
+        res.redirect("/tutores");
       }
     });
   },
 
   excluir: function (req, res, next) {
-    var usuario = new Usuario();
-    usuario.id = req.params.id;
-    usuario.excluir(function (retorno) {
+    var tutor = new Tutor();
+    tutor.id = req.params.id;
+    tutor.excluir(function (retorno) {
       if (retorno.erro) {
-        res.redirect("/usuarios/novo?erro=" + retorno.mensagem);
+        res.redirect("/tutores/novo?erro=" + retorno.mensagem);
       } else {
-        res.redirect("/usuarios");
+        res.redirect("/tutores");
       }
     });
   },
